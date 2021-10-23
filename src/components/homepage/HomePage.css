@@ -1,0 +1,32 @@
+.homepage {
+    width: 80%;
+    margin: 5px auto;
+}
+.hero{
+    background-image:linear-gradient(rgba(70, 59, 64, 0.48), rgba(192, 192, 113, 0.5)),url("../../assets/pexels-sevenstorm-juhaszimrus-425047.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding-bottom: 150px;
+   
+
+}
+
+.hero_text{
+    width: 40%;
+    padding-left: 50px;
+    padding-top: 100px ;
+    font-weight: 700;
+}
+.hero_text h1{
+    font-size: 3rem;
+    padding-top: 13px;
+   
+}
+
+.hero_text h4{
+    font-size: 1.3rem;
+    color: gray;
+    
+}
