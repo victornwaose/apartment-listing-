@@ -1,6 +1,7 @@
 .homepage {
     width: 80%;
     margin: 5px auto;
+    position: relative;
 }
 .hero{
     background-image:linear-gradient(rgba(70, 59, 64, 0.48), rgba(192, 192, 113, 0.5)),url("../../assets/pexels-sevenstorm-juhaszimrus-425047.jpg");

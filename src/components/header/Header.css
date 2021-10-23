@@ -31,16 +31,13 @@ a:hover {
 }
 .nav-options li {
     list-style: none;
-    
     padding-right: 18px;
     text-decoration: none;
     font-weight: 400;
     color: rgb(37, 36, 36);
     font-size: 20px;
 }
-Link {
-    text-decoration: none;
-}
+
 .nav-buttons {
     display: flex;
     border: transparent !important;
