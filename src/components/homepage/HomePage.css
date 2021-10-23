@@ -31,3 +31,70 @@
     color: gray;
     
 }
+
+.Search{
+    position: absolute;
+    bottom: -30px;
+    left: 43px;
+}
+.Search_options {
+    display: flex;
+    width: 100%;
+  
+}
+
+.Search_options .buy{
+    width: 100px;
+    padding: 5px;
+    height: 41px;
+    border-top-left-radius: 10px;
+    border: transparent !important;
+    cursor: pointer;
+}
+.buy:active {
+    background-color: brown;  
+}
+
+.sell{
+    width: 100px;
+    padding: 5px;
+    height: 41px;
+    border: transparent !important;
+    cursor: pointer;
+}
+.sell:active {
+    background-color: brown;  
+}
+.Search_options .rent {
+    width: 100px;
+    padding: 5px;
+    height: 41px;
+    border-top-right-radius: 10px;
+    border: transparent !important;
+    cursor: pointer;
+}
+.rent:active {
+    background-color: brown;  
+}
+.Search_inputs {
+    width: 463px;
+    height: 55px;
+    background-color: rgb(223, 221, 221);
+    border: 1px solid rgb(223, 221, 221);
+    border-radius: 10px; 
+}
+.location{
+    width: 122px;
+    height: 40px;
+    border: transparent !important;
+}
+.Price {
+    width: 122px;
+    height: 40px;
+    border: transparent !important;
+}
+.type {
+    width: 122px;
+    height: 40px;
+    border: transparent !important;
+}
