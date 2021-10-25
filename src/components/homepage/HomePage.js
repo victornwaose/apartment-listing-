@@ -7,6 +7,7 @@ import airbnb from "../../assets/Airbnb-Logo.jpg";
 import uber from "../../assets/uber.png";
 import paypal from "../../assets/paypal.png";
 import visa from "../../assets/visa.png";
+import About from "./about/About";
 
 const Homepage = () => {
     return (
@@ -48,19 +49,22 @@ const Homepage = () => {
                             <option>$$100,000</option>
                             <option>$110,000</option>
                         </select>
-                        <div>
-                            <SearchIcon />
+                        <div className="searchBtn">
+                            <SearchIcon
+                                style={{ width: "30px", height: "45px" }}
+                            />
                         </div>
                     </div>
                 </div>
             </div>
-            <div>
-                <img src={master} alt="visa" />
+            <div className="partner">
+                <img className="master" src={master} alt="master" />
                 <img src={airbnb} alt="airbnb" />
                 <img src={uber} alt="airbnb" />
                 <img src={paypal} alt="airbnb" />
                 <img src={visa} alt="airbnb" />
             </div>
+            <About />
         </div>
     );
 };

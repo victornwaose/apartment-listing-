@@ -1,0 +1,13 @@
+.About{
+    width: 80%;
+    margin: 5px auto;
+    
+}
+.carousel {
+    display: flex;
+    flex-direction: column;
+  }
+  .carouselItem {
+    display: flex;
+    flex-direction: column;
+  }

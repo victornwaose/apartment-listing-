@@ -2,11 +2,11 @@
 .header {
     background-color:  white;
     width: 80%;
-    margin:  10px auto;
+    margin:  5px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 57px;
 }
 a{
     text-decoration: none;

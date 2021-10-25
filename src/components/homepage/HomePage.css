@@ -1,6 +1,6 @@
 .homepage {
     width: 80%;
-    margin: 5px auto;
+    margin: 2px auto;
     position: relative;
 }
 .hero{
@@ -77,6 +77,7 @@
     background-color: brown;  
 }
 .Search_inputs {
+    display: flex;
     width: 463px;
     height: 55px;
     background-color: rgb(223, 221, 221);
@@ -85,20 +86,42 @@
 }
 .location{
     width: 122px;
-    height: 40px;
+    height: 50px;
     border: transparent !important;
 }
 .Price {
     width: 122px;
-    height: 40px;
+    height: 50px;
     border: transparent !important;
 }
 .type {
     width: 122px;
-    height: 40px;
+    height: 50px;
     border: transparent !important;
+}
+.partner {
+    width: 80%;
+    margin: 60px auto;
+    display: flex;
+    justify-content:  space-between;
+
+}
+.searchBtn{
+    margin-left: 11px;
+    background-color: rgb(63, 92, 74);
+    color: #fff;
+    width: 70px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
 }
 img{
     width: 100px;
-    height: 60px;
+    height: 44px;
+    align-items: center;
+    cursor: pointer;
+}
+.master {
+    margin-left: 50px;
 }
