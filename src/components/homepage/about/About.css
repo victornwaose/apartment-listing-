@@ -3,6 +3,9 @@
     margin: 5px auto;
     
 }
+.About h4{
+    margin-bottom: 20px;
+}
 .carousel {
     display: flex;
     flex-direction: column;
@@ -10,4 +13,10 @@
   .carouselItem {
     display: flex;
     flex-direction: column;
+    background-color: rgb(247,248,248);
+    border-radius: 10px;
+    margin-left: 20px
+  }
+  .carouselItem h3{
+      margin-top: 10px;
   }

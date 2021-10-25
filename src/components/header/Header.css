@@ -48,14 +48,14 @@ a:hover {
     padding: 5px;
     margin-left: 10px;
     background-color: white;
-    color: rgb(63, 92, 74);
-    border: 2px solid rgb(63, 92, 74)!important;
+    color: rgb(1, 100, 80);
+    border: 2px solid rgb(1, 100, 80) !important;
     border-radius: 5px;
     font-size: 20px;
     cursor: pointer;
 }
 .login:hover{
-    background-color: rgb(63, 92, 74);
+    background-color: rgb(1, 100, 80);
     color: white;
 }
 
@@ -64,7 +64,7 @@ a:hover {
     height: 35px;
     padding: 5px;
     margin-left: 10px;
-    background-color: rgb(63, 92, 74);
+    background-color: rgb(1, 100, 80);
     color: white;
     border-radius: 5px;
     font-size: 20px;

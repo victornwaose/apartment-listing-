@@ -19,11 +19,12 @@
     padding-left: 50px;
     padding-top: 100px ;
     font-weight: 700;
+   
 }
 .hero_text h1{
     font-size: 3rem;
     padding-top: 13px;
-   
+    color: rgb(10,10,10);
 }
 
 .hero_text h4{
@@ -52,7 +53,7 @@
     cursor: pointer;
 }
 .buy:active {
-    background-color: brown;  
+    background-color: rgb(255,101,1);  
 }
 
 .sell{
@@ -63,7 +64,7 @@
     cursor: pointer;
 }
 .sell:active {
-    background-color: brown;  
+    background-color: rgb(255,101,1);   
 }
 .Search_options .rent {
     width: 100px;
@@ -74,7 +75,7 @@
     cursor: pointer;
 }
 .rent:active {
-    background-color: brown;  
+    background-color: rgb(255,101,1);    
 }
 .Search_inputs {
     display: flex;
@@ -108,7 +109,7 @@
 }
 .searchBtn{
     margin-left: 11px;
-    background-color: rgb(63, 92, 74);
+    background-color: rgb(1, 100, 80);
     color: #fff;
     width: 70px;
     height: 50px;

@@ -12,9 +12,10 @@ const About = () => {
     const items = carousels?.map((carousel) => {
         return (
             <div className="carouselItem">
-            <img src={carousel.image} alt="name" style={{width: "240px", height: "40px"}}/>
-            <h2>{carousel?.price}</h2>
-                <h2>{carousel?.name}</h2>
+            <img src={carousel.image} alt="name" style={{width: "240px", height: "140px", marginLeft: "10px",    cursor: "pointer",
+            textTransform: "uppercase",}}/>
+            <h3>{carousel?.price}</h3>
+                <h5>{carousel?.name}</h5>
             </div>
         );
     });
@@ -30,10 +31,11 @@ const About = () => {
     return (
         <div className="About">
             <h1>New Listed Apartment</h1>
-            <h4>with over 1 million house for sale </h4>
+            <h4 >with over 1 million house for sale </h4>
 
             <AliceCarousel
                 mouseTracking
+                keyboardNavigation8
                 autoPlayInterval={1000}
                 animationDuration={1500}
                 disableDotsControls

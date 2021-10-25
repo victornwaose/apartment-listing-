@@ -8,6 +8,7 @@ import uber from "../../assets/uber.png";
 import paypal from "../../assets/paypal.png";
 import visa from "../../assets/visa.png";
 import About from "./about/About";
+import Services from "./our_services/Services"
 
 const Homepage = () => {
     return (
@@ -65,6 +66,7 @@ const Homepage = () => {
                 <img src={visa} alt="airbnb" />
             </div>
             <About />
+            <Services />
         </div>
     );
 };
