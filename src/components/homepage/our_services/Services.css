@@ -1,0 +1,40 @@
+.services{
+width: 80%;
+margin: 10px auto;
+display: flex;
+flex-direction: column;
+margin: 40px auto;
+text-align: center;
+}
+.services h4{
+color: rgb(1, 100, 80);
+}
+.services h2{
+    margin-bottom: 25px;
+}
+.grid__item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    margin-top: 10px;
+
+}
+.icon__container{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 5px  ;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.icon__container:hover{
+    border-bottom: 10px solid rgb(1, 100, 80);
+}
+.item__icon {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 40%;
+    border-radius: 50%;    
+    width: 40%;
+    padding-top: 18px;
+    align-items: center;
+}
+.icon__container p{
+    padding-top: 28px;
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import SearchIcon from "@mui/icons-material/Search";
 
 import "./HomePage.css";
@@ -8,9 +8,12 @@ import uber from "../../assets/uber.png";
 import paypal from "../../assets/paypal.png";
 import visa from "../../assets/visa.png";
 import About from "./about/About";
-import Services from "./our_services/Services"
+import Services from "./our_services/Services";
 
 const Homepage = () => {
+    const [location, setLocation] = useState("abia");
+    const [type, setType] = useState("bungalow");
+    const [price, setPrice] = useState("5000");
     return (
         <div>
             <div className="homepage">
@@ -32,24 +35,52 @@ const Homepage = () => {
                     </div>
 
                     <div className="Search_inputs">
-                        <select className="location" name="location">
-                            <option>New-york</option>
-                            <option>London</option>
-                            <option>Manchester</option>
-                            <option>Merseyside</option>
-                        </select>
-                        <select className="Price" name="Max Price">
-                            <option>New-york</option>
-                            <option>London</option>
-                            <option>Manchester</option>
-                            <option>Merseyside</option>
-                        </select>
-                        <select className="type" name="type">
-                            <option>$60,000</option>
-                            <option>$70,000</option>
-                            <option>$$100,000</option>
-                            <option>$110,000</option>
-                        </select>
+                        <div>
+                            <h4 className="location__header">Location</h4>
+                            <select
+                                className="location"
+                                value={location}
+                                onChange={(e) => setLocation(e.target.value)}
+                            >
+                                <option>New-york</option>
+                                <option>London</option>
+                                <option>Manchester</option>
+                                <option>Merseyside</option>
+                            </select>
+                        </div>
+                        <div>
+                            <h4>Type</h4>
+                            <select
+                                className="Price"
+                                value={type}
+                                onChange={(e) => setType(e.target.value)}
+                            >
+                                <option value="bungalow">Bungalow</option>
+                                <option value="flat">Flat</option>
+                                <option value="duplex">Duplex</option>
+                                <option value="terrace">Terrace</option>
+                                <option value="semi-detached">
+                                    Semi-detached
+                                </option>
+                                <option value="detached">Detached</option>
+                                <option value="maisonette">Maisonette</option>
+                                <option value="penthouse">Penthouse</option>
+                            </select>
+                        </div>
+                        <div>
+                            <h4>Price</h4>
+                            <select
+                                className="type"
+                                name="type"
+                                value={price}
+                                onChange={(e) => setPrice(e.target.value)}
+                            >
+                                <option>$60,000</option>
+                                <option>$70,000</option>
+                                <option>$$100,000</option>
+                                <option>$110,000</option>
+                            </select>
+                        </div>
                         <div className="searchBtn">
                             <SearchIcon
                                 style={{ width: "30px", height: "45px" }}
