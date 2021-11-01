@@ -127,8 +127,5 @@ button {
     margin-top: 5px;
     margin-left: 7px;
 }
-.compare-text-text::after {
-    width: 180px;
-    border-bottom: 19px solid rgb(255,101,1);
-}
+
 
