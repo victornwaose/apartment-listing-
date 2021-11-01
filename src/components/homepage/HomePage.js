@@ -2,14 +2,15 @@ import React, { useState } from "react";
 import SearchIcon from "@mui/icons-material/Search";
 
 import "./HomePage.css";
+import House from "./house/House";
+import Story from "./story/Story";
+import Services from "./our_services/Services";
 import master from "../../assets/materCard.jpg";
 import airbnb from "../../assets/Airbnb-Logo.jpg";
 import uber from "../../assets/uber.png";
 import paypal from "../../assets/paypal.png";
 import visa from "../../assets/visa.png";
 import About from "./about/About";
-import Services from "./our_services/Services";
-import Story from "./story/Story";
 
 const Homepage = () => {
     const [search, setSearch] = useState("");
@@ -58,6 +59,7 @@ const Homepage = () => {
             </div>
             <About />
             <Services />
+            <House />
             <Story />
         </div>
     );
