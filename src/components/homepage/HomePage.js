@@ -5,6 +5,7 @@ import "./HomePage.css";
 import House from "./house/House";
 import Story from "./story/Story";
 import Services from "./our_services/Services";
+import Testimony from "./testimony/Testimony";
 import master from "../../assets/materCard.jpg";
 import airbnb from "../../assets/Airbnb-Logo.jpg";
 import uber from "../../assets/uber.png";
@@ -60,7 +61,7 @@ const Homepage = () => {
             <About />
             <Services />
             <House />
-            <Story />
+            <Testimony />
         </div>
     );
 };
