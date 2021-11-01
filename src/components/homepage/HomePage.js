@@ -9,11 +9,16 @@ import paypal from "../../assets/paypal.png";
 import visa from "../../assets/visa.png";
 import About from "./about/About";
 import Services from "./our_services/Services";
+import Story from "./story/Story";
 
 const Homepage = () => {
-    const [location, setLocation] = useState("abia");
-    const [type, setType] = useState("bungalow");
-    const [price, setPrice] = useState("5000");
+    const [search, setSearch] = useState("");
+
+    const onChange = (e) => {
+        e.preventDefault();
+    };
+    console.log(search);
+
     return (
         <div>
             <div className="homepage">
@@ -26,66 +31,21 @@ const Homepage = () => {
                         </h4>
                     </div>
                 </div>
-
                 <div className="Search">
-                    <div className="Search_options .active">
-                        <button className="buy ">Buy</button>
-                        <button className="sell">Sell</button>
-                        <button className="rent">Rent</button>
-                    </div>
-
-                    <div className="Search_inputs">
-                        <div>
-                            <h4 className="location__header">Location</h4>
-                            <select
-                                className="location"
-                                value={location}
-                                onChange={(e) => setLocation(e.target.value)}
-                            >
-                                <option>New-york</option>
-                                <option>London</option>
-                                <option>Manchester</option>
-                                <option>Merseyside</option>
-                            </select>
-                        </div>
-                        <div>
-                            <h4>Type</h4>
-                            <select
-                                className="Price"
-                                value={type}
-                                onChange={(e) => setType(e.target.value)}
-                            >
-                                <option value="bungalow">Bungalow</option>
-                                <option value="flat">Flat</option>
-                                <option value="duplex">Duplex</option>
-                                <option value="terrace">Terrace</option>
-                                <option value="semi-detached">
-                                    Semi-detached
-                                </option>
-                                <option value="detached">Detached</option>
-                                <option value="maisonette">Maisonette</option>
-                                <option value="penthouse">Penthouse</option>
-                            </select>
-                        </div>
-                        <div>
-                            <h4>Price</h4>
-                            <select
-                                className="type"
-                                name="type"
-                                value={price}
-                                onChange={(e) => setPrice(e.target.value)}
-                            >
-                                <option>$60,000</option>
-                                <option>$70,000</option>
-                                <option>$$100,000</option>
-                                <option>$110,000</option>
-                            </select>
-                        </div>
-                        <div className="searchBtn">
-                            <SearchIcon
-                                style={{ width: "30px", height: "45px" }}
-                            />
-                        </div>
+                    <h4>we provide the best of house for affordable price</h4>
+                    <h4>search for the best price of house</h4>
+                    <div className="Search_Items">
+                        <input
+                            type="text"
+                            placeholder="Search for house ready for rent "
+                            value={search}
+                            onChange={(e) => setSearch(e.target.value)}
+                            className="Search_input"
+                        />
+                        <SearchIcon
+                            className="searchBtn"
+                            style={{ width: "8%", height: "34px" }}
+                        />
                     </div>
                 </div>
             </div>
@@ -98,6 +58,7 @@ const Homepage = () => {
             </div>
             <About />
             <Services />
+            <Story />
         </div>
     );
 };

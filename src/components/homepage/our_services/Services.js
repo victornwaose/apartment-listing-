@@ -12,7 +12,6 @@ const Services = () => {
             <div className="grid__item">
                 <div className="icon__container">
                     <GiHouse className="item__icon" />
-
                     <p className="item__text">Buy your dream home</p>
                 </div>
 
@@ -23,7 +22,6 @@ const Services = () => {
 
                 <div className="icon__container">
                     <GiHouseKeys className="item__icon" />
-
                     <p className="item__text">Rent your home you love</p>
                 </div>
 

@@ -5,6 +5,7 @@
 }
 .About h4{
     margin-bottom: 20px;
+    color: gray;
 }
 .carousel {
     display: flex;

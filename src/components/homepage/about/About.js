@@ -44,9 +44,11 @@ const About = () => {
             <AliceCarousel
                 mouseTracking
                 keyboardNavigation8
+                infinite
                 autoPlayInterval={1000}
                 animationDuration={1500}
                 disableDotsControls
+                disableButtonsControls
                 responsive={responsive}
                 autoPlay
                 items={items}

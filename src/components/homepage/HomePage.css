@@ -4,7 +4,7 @@
     position: relative;
 }
 .hero{
-    background-image:linear-gradient(rgba(70, 59, 64, 0.48), rgba(192, 192, 113, 0.5)),url("../../assets/pexels-sevenstorm-juhaszimrus-425047.jpg");
+    background-image:url("../../assets/hero-image-1.png");
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -29,98 +29,59 @@
 
 .hero_text h4{
     font-size: 1.3rem;
-    color: gray;
-    
+    color: gray;  
 }
 
 .Search{
     position: absolute;
-    bottom: -30px;
+    bottom: -48px;
     left: 43px;
-}
-.Search_options {
-    display: flex;
-    width: 100%;
-  
-}
-
-.Search_options .buy{
-    width: 100px;
-    padding: 5px;
-    height: 41px;
-    border-top-left-radius: 10px;
-    border: transparent !important;
-    cursor: pointer;
-}
-.buy:active {
-    background-color: rgb(255,101,1);  
-}
-
-.sell{
-    width: 100px;
-    padding: 5px;
-    height: 41px;
-    border: transparent !important;
-    cursor: pointer;
-}
-.sell:active {
-    background-color: rgb(255,101,1);   
-}
-.Search_options .rent {
-    width: 100px;
-    padding: 5px;
-    height: 41px;
-    border-top-right-radius: 10px;
-    border: transparent !important;
-    cursor: pointer;
-}
-.rent:active {
-    background-color: rgb(255,101,1);    
-}
-.Search_inputs {
-    display: flex;
-    width: 463px;
-    height: 55px;
-    background-color: rgb(223, 221, 221);
+    width: 500px;
     border: 1px solid rgb(223, 221, 221);
+    height: 120px;
+    background-color: rgb(223, 221, 221);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    margin-left: 20%;
 }
-.location{
-    width: 122px;
-    height: 50px;
-    border: transparent !important;
-}
-.Price {
-    width: 122px;
-    height: 50px;
-    border: transparent !important;
-}
-.type {
-    width: 122px;
-    height: 50px;
-    border: transparent !important;
-}
-.partner {
-    width: 80%;
-    margin: 60px auto;
-    display: flex;
-    justify-content:  space-between;
 
+.Search h4 {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
 }
-.searchBtn{
-    margin-left: 11px;
+.Search_Items {
+ position: relative;
+}
+.Search_input{
+    padding: 15px;
+    width: 350px;
+    height: 10px;
+    margin-left: 15%;
+}
+.searchBtn{ 
+    position: absolute;
+    bottom: 0;
     background-color: rgb(1, 100, 80);
     color: #fff;
-    width: 70px;
-    height: 50px;
-    border-radius: 10px;
     text-align: center;
     cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.partner{
+    width: 80%;
+    margin: 90px auto;
+    display: flex;
+    justify-content: space-between;
 }
 img{
     width: 100px;
     height: 44px;
     align-items: center;
     cursor: pointer;
+   
+    
 }
 .master {
     margin-left: 50px;
