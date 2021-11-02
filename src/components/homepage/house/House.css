@@ -101,7 +101,6 @@ button {
     position: absolute;
     width: 40%;
     height: 190px;
-    padding: 9px;
     bottom: 30px;
     right: -210px;
     display: flex;

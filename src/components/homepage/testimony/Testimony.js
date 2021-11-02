@@ -9,20 +9,25 @@ const Testimony = () => {
 
     const items = testimonies?.map((testimony) => {
         return (
-            <div className="carouselItem">
-                <img
-                    src={testimony?.img}
-                    alt="name"
-                    style={{
-                        width: "5%",
-                        height: "5%",
-                        borderRadius: "50%",
-                        cursor: "pointer",
-                        textTransform: "uppercase",
-                    }}
-                />
-
-                <h5>{testimony?.name}</h5>
+            <div className="carouselItem2">
+                <p>{testimony?.testimony}</p>
+                <div className="carouselItem2-profiles">
+                    <img
+                        src={testimony?.img}
+                        alt="name"
+                        style={{
+                            width: "45px",
+                            height: "45spx",
+                            borderRadius: "50%",
+                            cursor: "pointer",
+                            textTransform: "uppercase",
+                        }}
+                    />
+                    <div>
+                        <h5>{testimony?.name}</h5>
+                        <h6>{testimony?.work}</h6>
+                    </div>
+                </div>
             </div>
         );
     });
