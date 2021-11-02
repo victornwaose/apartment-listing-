@@ -25,3 +25,40 @@ export const data = [
         price: "12,000,00",
     },
 ];
+export const testimony = [
+    {
+        testimony:
+            "HomeFinder has really made home Search rent and selling as easy as ABC i move to the Apartment of my dream in matter of day all thanks to HomeFinder",
+        img: "/image/man1.jpg",
+        name: "Victor Nwaose",
+        work: "CEO at Tech.com",
+    },
+    {
+        testimony:
+            "HomeFinder has really made home Search rent and selling as easy as ABC i move to the Apartment of my dream in matter of day all thanks to HomeFinder",
+        img: "/image/man1.jpg",
+        name: "Victor Nwaose",
+        work: "CEO at Tech.com",
+    },
+    {
+        testimony:
+            "HomeFinder has really made home Search rent and selling as easy as ABC i move to the Apartment of my dream in matter of day all thanks to HomeFinder",
+        img: "/image/woman.jpg",
+        name: "Queen Jane",
+        work: "CEO at  playWill.com",
+    },
+    {
+        testimony:
+            "HomeFinder has really made home Search rent and selling as easy as ABC i move to the Apartment of my dream in matter of day all thanks to HomeFinder",
+        img: "/image/man2.jpg",
+        name: "Adekunle Peace",
+        work: "CEO at loanShark.com",
+    },
+    {
+        testimony:
+            "HomeFinder has really made home Search rent and selling as easy as ABC i move to the Apartment of my dream in matter of day all thanks to HomeFinder",
+        img: "/image/woman.jpg",
+        name: "Esther Okoro",
+        work: "CEO at loanShark.com",
+    },
+];
