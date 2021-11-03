@@ -4,6 +4,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import "./HomePage.css";
 import House from "./house/House";
 import Services from "./our_services/Services";
+import Listed from "./listed/Listed";
 import Testimony from "./testimony/Testimony";
 import master from "../../assets/materCard.jpg";
 import airbnb from "../../assets/Airbnb-Logo.jpg";
@@ -61,6 +62,7 @@ const Homepage = () => {
             <Services />
             <House />
             <Testimony />
+            <Listed />
         </div>
     );
 };

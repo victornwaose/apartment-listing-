@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Footer from "./components/footer/Footer";
 
 import Header from "./components/header/Header";
 import Homepage from "./components/homepage/HomePage";
@@ -19,6 +20,7 @@ function App() {
                 <Route path="/review" component={Review} />
                 <Route path="/sell" component={Sell} />
             </Switch>
+            <Footer />
         </Router>
     );
 }

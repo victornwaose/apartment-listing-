@@ -27,6 +27,7 @@ color: rgb(1, 100, 80);
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    margin-left: 20px;
 }
 .icon__container p{
     padding-top: 28px;

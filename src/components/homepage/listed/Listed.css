@@ -1,0 +1,39 @@
+.listed {
+    background-image: url("../../../assets/building\ 3.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat:  no-repeat;
+    width: 80%;
+    margin: 20px auto;
+    padding-bottom: 350px;
+    position: relative;
+    border-radius: 5px;
+}
+.list-search-text {
+   position: absolute;
+    padding-top: 60px;
+    background-color: rgb(255,255,255);
+    border-radius: 10px;
+    width: 70%;
+    margin: 60px auto;
+    left: 140px;
+    top: 40px;
+}
+.list-search-text h1  {
+    text-align: center;
+}
+.list-search-text  span {
+    color: rgb(1, 100, 80);
+}
+.list-search-text p {
+    text-align: center;
+    color: grey;
+    margin-bottom:  20px;
+}
+.list-search{
+    padding: 15px;
+    width: 350px;
+    height: 10px;
+    margin-left: 30%;
+    margin-bottom: 40px;
+}

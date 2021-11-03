@@ -23,11 +23,12 @@ const Testimony = () => {
                             textTransform: "uppercase",
                         }}
                     />
-                    <div>
+                    <div className="carouselItem2-profiles-left">
                         <h5>{testimony?.name}</h5>
                         <h6>{testimony?.work}</h6>
                     </div>
                 </div>
+                <span></span>
             </div>
         );
     });
