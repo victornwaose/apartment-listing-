@@ -79,10 +79,66 @@ img{
     width: 100px;
     height: 44px;
     align-items: center;
-    cursor: pointer;
-   
-    
+    cursor: pointer;    
 }
 .master {
     margin-left: 50px;
+} 
+@media screen and (max-width: 790px) {
+    .homepage {
+        width: 100%;
+    }
+       .hero_text{
+    width: 100%;
+    text-align: center;
+    }
+    .hero_text h1{
+        font-size: 2.7rem;
+        padding-top: 13px;
+    }
+    .hero_text h4{
+    font-size:  1.7rem; 
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .homepage {
+        width: 100%;
+    }
+    .hero_text{
+    width: 100%;
+    text-align: center;
+    }
+    .hero_text h1{
+        font-size: 2rem;
+        padding-top: 13px;
+    }
+    .hero_text h4{
+    font-size:  1rem; 
+}
+.Search{
+    bottom: -48px;
+    left: 0;
+    width: 345px;
+    margin-left: 19px;
+   
+}
+.Search_input{
+    padding: 15px;
+    width: 250px;
+    margin-left: px;
+}
+.partner{
+    width: 100%;
+}
+img{
+    width: 60px;
+    height: 30px;  
+}
+img:last-child{
+   margin-right: 7px; 
+}
+.master {
+    margin-left: 7px;
+}
 }

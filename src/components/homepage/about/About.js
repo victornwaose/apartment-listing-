@@ -32,6 +32,9 @@ const About = () => {
             items: 1,
         },
         512: {
+            items: 2,
+        },
+        790: {
             items: 4,
         },
     };
