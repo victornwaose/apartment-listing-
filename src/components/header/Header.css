@@ -48,7 +48,8 @@ a:hover {
     font-weight: 100;
     padding: 5px 10px;
     margin-right: 12px;
-    margin-bottom: 15px;
+    color: black;
+    font-size: 20px;
 }
 a {
     text-decoration: none;
@@ -63,6 +64,7 @@ a {
     width: 140px;
     height: 35px;
     padding: 5px;
+    margin-top: 15px;
     margin-left: 10px;
     background-color: white;
     color: rgb(1, 100, 80);
@@ -93,17 +95,55 @@ a {
     color: rgb(63, 92, 74);
     border: 2px solid rgb(63, 92, 74)!important;
 }
- @media screen and (max-width: 760px) {
+ @media screen and (max-width: 790px) {
     .header {
         width: 100% !important;
         height: 57px;
     }
+    .logo h1 {
+        font-size:20px; 
+    }
+    .nav-icon {
+        display: block;
+    }
+    .nav {
+    flex-direction: column;    
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 100%; 
+    background-color: rgba(0,0,0.8);
+    padding: 33px 56px;
+    z-index: 200;
+}
+.nav-options ul {
+    flex-direction: column; 
+}
+.nav-button{ 
+    display:flex;
+    flex-direction: column;
+}
+.nav-options ul  li  {
+  text-align: center;
+}
+.nav.close {   
+    right: -990px !important;
+    transition: all 0.5 ease-in-out !important;
+}
+.login{
+    margin-bottom: 10px;
+} 
+.signup{
+    margin-bottom: 10px;
+}
 
 }
 @media screen and (max-width: 490px) { 
     .header {
         width: 100% !important;
         height: 57px;
+      
+
     }
     .logo h1 {
         font-size:20px; 
