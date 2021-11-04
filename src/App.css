@@ -3,3 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+.App {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}

@@ -5,6 +5,7 @@
     margin:  5px auto;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     align-items: center;
     height: 57px;
 }
@@ -20,27 +21,43 @@ a:hover {
     font-size:30px;
     cursor: pointer;
 }
+.nav-icon {
+    display: none;
+    cursor: pointer;
+}
 .nav {
     display: flex;
+    position: relative;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
 }
 .nav-options {
     display: flex;
     justify-content: space-between;
-    margin-right: 120px;
-    text-decoration: none;
 }
-.nav-options li {
-    list-style: none;
-    padding-right: 18px;
-    text-decoration: none;
-    font-weight: 400;
-    color: rgb(37, 36, 36);
-    font-size: 20px;
-}
-
-.nav-buttons {
+.nav-options ul {
     display: flex;
-    border: transparent !important;
+    position: relative;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;    
+}
+.nav-options ul  li  {
+    text-decoration: none;
+    font-weight: 100;
+    padding: 5px 10px;
+    margin-right: 12px;
+    margin-bottom: 15px;
+}
+a {
+    text-decoration: none;
+    font-weight: 300;
+    list-style: none;
+    color: white;
+}
+ a:hover {
+    border-bottom: 4px solid brown;
 }
 .login {
     width: 140px;
@@ -76,3 +93,54 @@ a:hover {
     color: rgb(63, 92, 74);
     border: 2px solid rgb(63, 92, 74)!important;
 }
+ @media screen and (max-width: 760px) {
+    .header {
+        width: 100% !important;
+        height: 57px;
+    }
+
+}
+@media screen and (max-width: 490px) { 
+    .header {
+        width: 100% !important;
+        height: 57px;
+    }
+    .logo h1 {
+        font-size:20px; 
+    }
+    .nav-icon {
+        display: block;
+    }
+    .nav {
+    flex-direction: column;    
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 100%; 
+    background-color: rgba(0,0,0,0.8);
+    padding: 33px 56px;
+    z-index: 200;
+}
+.nav-options ul {
+    flex-direction: column;  
+   
+   
+}
+.nav-button{ 
+    display:flex;
+    flex-direction: column;
+}
+.nav-options ul  li  {
+  text-align: center;
+}
+.nav.close {   
+    right: -490px !important;
+    transition: all 0.5 ease-in-out !important;
+}
+.login{
+    margin-bottom: 10px;
+} 
+.signup{
+    margin-bottom: 10px;
+}
+} 

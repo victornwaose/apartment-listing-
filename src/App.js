@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 
 import Header from "./components/header/Header";
+import "./App.css";
 import Homepage from "./components/homepage/HomePage";
 import Buy from "./pages/Buy";
 import Lend from "./pages/lend/Lend";
@@ -11,6 +12,7 @@ import Sell from "./pages/sell/Sell";
 
 function App() {
     return (
+        <div className="App">
         <Router>
             <Header />
             <Switch>
@@ -22,6 +24,7 @@ function App() {
             </Switch>
             <Footer />
         </Router>
+        </div>
     );
 }
 
