@@ -3,8 +3,34 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: 500px;
+    width: 100%;
+    height: 100vh;
+
 }
-.log-conatiner {
+.log-container {
+    position: relative;
     width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.log-detail {
+    width: 90%;
+    position: absolute;
+    margin: auto;
+    background-color:  #fff;
+    border-radius: 10px;
+}
+.log-form  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.log-input {
+    width: 70%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom:  20px;
+    border-radius: 10px;
+    border: transparent !important;
 }
