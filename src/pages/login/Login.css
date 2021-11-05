@@ -1,0 +1,10 @@
+.log{
+    background-image: url("../../assets/signin.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 500px;
+}
+.log-conatiner {
+    width: 80%;
+}

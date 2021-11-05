@@ -38,8 +38,13 @@ const Header = () => {
                             <li>Reviews</li>
                         </Link>
                         <div className="nav-button">
+                        <Link to ="/login"> 
                             <button className="login">Login</button>
-                            <button className="signup">Sign Up</button>
+                        </Link>
+                            <Link>
+                                <button className="signup">Sign Up</button>
+                            </Link>
+                            
                         </div>
                     </ul>{" "}
                 </div>

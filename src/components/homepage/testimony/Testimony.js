@@ -59,7 +59,7 @@ const Testimony = () => {
                 disableButtonsControls
                 responsive={responsive}
                 autoPlay
-                inifinte
+                infinite
                 items={items}
             />
         </div>

@@ -6,6 +6,7 @@ import Header from "./components/header/Header";
 import "./App.css";
 import Homepage from "./components/homepage/HomePage";
 import Buy from "./pages/Buy";
+import Login from "./pages/login/Login"
 import Lend from "./pages/lend/Lend";
 import Review from "./pages/review/Review";
 import Sell from "./pages/sell/Sell";
@@ -21,6 +22,7 @@ function App() {
                 <Route path="/lend" component={Lend} />
                 <Route path="/review" component={Review} />
                 <Route path="/sell" component={Sell} />
+                <Route path="/login" component={Login} />
             </Switch>
             <Footer />
         </Router>
