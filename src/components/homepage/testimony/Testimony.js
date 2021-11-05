@@ -37,7 +37,10 @@ const Testimony = () => {
             items: 1,
         },
         512: {
-            items: 3,
+            items: 2,
+        },
+        790: {
+            items: 4,
         },
     };
 
@@ -53,8 +56,10 @@ const Testimony = () => {
                 autoPlayInterval={1000}
                 animationDuration={1500}
                 disableDotsControls
+                disableButtonsControls
                 responsive={responsive}
                 autoPlay
+                inifinte
                 items={items}
             />
         </div>

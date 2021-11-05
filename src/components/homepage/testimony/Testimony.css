@@ -13,24 +13,7 @@
     color: rgb(1, 100, 80);
 }
 
-.alice-carousel__prev-btn {
-    background-color: rgb(255,101,1);
-    width: 38px;
-    height: 35px;
-    margin-left: 500px;
-    border-radius: 50%; 
-    text-align: center;  
-    margin-top: 30px;
-}
 
-.alice-carousel__next-btn{
-    background-color: rgb(255,101,1);
-    margin-left: 5px;
-    width: 38px;
-    height: 35px;
-    border-radius: 50%;
-    margin-top: 30px;  
-}
 .carouselItem2 {
     width: 70%;
     height: 190px;
@@ -69,3 +52,22 @@
 .carouselItem2-profiles h6{
     color: grey;
 } 
+@media screen and (max-width: 490px) {
+    .testimony {
+        width: 100%;
+    }
+    .testimony-text {
+        width: 90%;
+        text-align: center;
+    }
+    .testimony-text h5{
+        color: rgb(1, 100, 80);
+    }
+    .carouselItem2 {
+    width: 90%;
+}
+
+}
+@media screen and (max-width: 790px) {
+
+}

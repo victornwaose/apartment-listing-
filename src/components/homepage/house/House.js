@@ -27,7 +27,7 @@ const Story = () => {
                     </button>
                 </div>
             </div>
-            <div className="house-container">
+            <div className="house-container2">
                 <div className="house-container-text2">
                     <h5>Sell Home</h5>
                     <h1>Home Selling is now much more easier </h1>
