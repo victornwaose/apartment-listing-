@@ -63,11 +63,20 @@
     .testimony-text h5{
         color: rgb(1, 100, 80);
     }
+    .testimony-text  h1 {
+        font-size: 20px;
+    }
     .carouselItem2 {
     width: 90%;
 }
 
 }
 @media screen and (max-width: 790px) {
-
+    .testimony {
+        width: 100%;
+    }
+    .testimony-text {
+        width: 90%;
+        text-align: center;
+    }
 }

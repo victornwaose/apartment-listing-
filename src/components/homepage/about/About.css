@@ -3,6 +3,7 @@
     margin: 5px auto;
     
 }
+
 .About h4{
     margin-bottom: 20px;
     color: gray;
@@ -20,4 +21,9 @@
   }
   .carouselItem h3{
       margin-top: 10px;
+  }
+  @media screen and (max-width: 490px) {
+      h1{
+          font-size: 20px;
+      }
   }

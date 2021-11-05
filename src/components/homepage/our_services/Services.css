@@ -66,6 +66,7 @@ color: rgb(1, 100, 80);
     margin-right: auto;
     margin-bottom: 10px;
 }
+
 }  
 @media screen and (max-width: 490px) {
     .services{
@@ -76,6 +77,9 @@ color: rgb(1, 100, 80);
     display: grid;
     grid-template-columns: repeat(1, 1fr); 
     margin-top: 10px;
+}
+.services h2{
+    font-size: 20px;
 }
 .icon__container{
     width: 90%;
