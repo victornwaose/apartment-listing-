@@ -48,4 +48,41 @@ color: rgb(1, 100, 80);
 .item__icon:active {
     color: rgb(1, 100, 80);
 }
+@media screen and (max-width: 790px) {
+    .services{
+        width: 100%;
+    }
 
+    .grid__item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    margin-top: 10px;
+}
+.icon__container{
+    width: 90%;
+    padding: 2px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+}  
+@media screen and (max-width: 490px) {
+    .services{
+        width: 100%;
+    }
+
+    .grid__item {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    margin-top: 10px;
+}
+.icon__container{
+    width: 90%;
+    padding: 2px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+}

@@ -6,6 +6,7 @@
 }
 .house-container{
     display: flex;
+    flex-direction: row;
     margin-bottom: 50px;
 }
 
@@ -45,6 +46,12 @@ button {
     border-radius: 5px;
     border: transparent !important;
     cursor: pointer;
+}
+.house-container2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 50px;
 }
 .house-container-text2 {
     width: 40%; 
@@ -91,7 +98,8 @@ button {
 .compare-container {
     width: 80%;
     position: relative;
-    display: flex
+    display: flex;
+    flex-direction: row;
 }
 .compare-container-img {
     width: 800px;
@@ -130,4 +138,100 @@ button {
     margin-left: 7px;
 }
 
+@media screen and (max-width: 490px) {
+    .house {
+        width: 100%;     
+    }
+    .house-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .house-container-image {
+        width: 100%;
+        margin-right: 0;   
+    }
+    .house-container-text {
+    width: 100%; 
+    text-align: center; 
+    margin: 0;
+}
 
+.house-container-text h1 {
+   text-align: center;
+}
+.house-container-text p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+button {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.house-container2{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.house-container-text2 {
+    width: 100%;
+    margin-left: 0px; 
+    text-align: center;
+}
+.house-container-text2 h5{
+    text-align: center;
+}
+.house-container-text2 h1 {
+    text-align: center;
+}
+.house-container-text2 p {
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.house-container-image2 {
+    width: 100%;
+    margin: 0  
+}
+.house_pic2 {
+    width: 99%;
+    height: 90%;
+    margin-left: 0px;
+}
+button {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.compare {
+    width: 100%; 
+    
+}
+.compare-text {
+    width: 92%;
+}
+.compare-container {
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.compare-container-img {
+    width: 400px;
+    height: 70%;
+}
+.compare-text-text {
+    width: 100%;
+    height: 182px;
+    bottom: 19px;
+    right: -27px;
+    justify-content: center;
+    padding: 0px;
+    text-align: center;
+    border-radius: 10px;
+}
+}
+
+
+@media screen and (max-width: 790px) {
+
+}
