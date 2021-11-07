@@ -3,14 +3,14 @@ import { getAuth } from "firebase/auth";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-    apiKey: process.env.REACT_APP_API_KEY,
-    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_APPLICATION_ID,
+    apiKey: "AIzaSyAp7gLTi7jFgiINdccRGLfmVozwqOaXbvE",
+    authDomain: "apartment-listing-45b6c.firebaseapp.com",
+    projectId: "apartment-listing-45b6c",
+    storageBucket: "apartment-listing-45b6c.appspot.com",
+    messagingSenderId: "933074869301",
+    appId: "1:933074869301:web:3741cf2941ccc8b32e657c",
 };
-console.log(process.env.REACT_APP_API_KEY);
+
 const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth(app);

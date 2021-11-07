@@ -13,9 +13,9 @@ a{
     text-decoration: none;
     font-weight: 300;
 }
-a:hover {
+/* a:hover {
     border-bottom: 4px solid brown;
-}
+} */
 .logo h1 {
     font-weight: 700;
     font-size:30px;
@@ -55,11 +55,9 @@ a {
     text-decoration: none;
     font-weight: 300;
     list-style: none;
-    color: white;
+    color: black;
 }
- a:hover {
-    border-bottom: 4px solid brown;
-}
+
 .login {
     width: 140px;
     height: 35px;
@@ -76,6 +74,10 @@ a {
 .login:hover{
     background-color: rgb(1, 100, 80);
     color: white;
+    border: none;
+}
+.login a:hover {
+    border-bottom: none;
 }
 
 .signup {
@@ -94,11 +96,19 @@ a {
     background-color: white;
     color: rgb(63, 92, 74);
     border: 2px solid rgb(63, 92, 74)!important;
+    
 }
+.signup a:hover {
+    border-bottom: none;
+}
+
  @media screen and (max-width: 790px) {
     .header {
         width: 100% !important;
         height: 57px;
+    }
+    a {
+        color: #fff
     }
     .logo h1 {
         font-size:20px; 
@@ -119,17 +129,22 @@ a {
 .nav-options ul {
     flex-direction: column; 
 }
-.nav-button{ 
-    display:flex;
-    flex-direction: column;
-}
+
 .nav-options ul  li  {
   text-align: center;
+  color: white;
 }
 .nav.close {   
     right: -990px !important;
     transition: all 0.5 ease-in-out !important;
 }
+.nav-button{ 
+    display:flex;
+    flex-direction: column;
+}
+.nav-button a:hover{ 
+    border-bottom: none;
+} 
 .login{
     margin-bottom: 10px;
 } 
@@ -144,6 +159,9 @@ a {
         height: 57px;
       
 
+    }
+    a {
+        color: #fff
     }
     .logo h1 {
         font-size:20px; 
@@ -172,6 +190,7 @@ a {
 }
 .nav-options ul  li  {
   text-align: center;
+  color: white
 }
 .nav.close {   
     right: -490px !important;

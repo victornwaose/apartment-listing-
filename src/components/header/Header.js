@@ -22,7 +22,7 @@ const Header = () => {
             <div className={close ? "nav" : "nav close"}>
                 <div className="nav-options">
                     <ul>
-                        <Link>
+                        <Link to="/">
                             <li>Home</li>
                         </Link>
                         <Link to="/buy">
@@ -38,13 +38,12 @@ const Header = () => {
                             <li>Reviews</li>
                         </Link>
                         <div className="nav-button">
-                        <Link to ="/login"> 
-                            <button className="login">Login</button>
-                        </Link>
-                            <Link>
+                            <Link to="/login">
+                                <button className="login">Login</button>
+                            </Link>
+                            <Link to="/signup">
                                 <button className="signup">Sign Up</button>
                             </Link>
-                            
                         </div>
                     </ul>{" "}
                 </div>

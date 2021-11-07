@@ -26,6 +26,7 @@
 }
 .log-detail h1 {
     margin-top: 15px;
+    margin-bottom: 27px;
 }
 .log-form  {
     display: flex;
@@ -45,5 +46,6 @@
     margin-bottom:  20px;
 }
 p{
+    margin-top: 20px;
     margin-bottom: 26px;
 }
