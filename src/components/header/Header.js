@@ -4,13 +4,17 @@ import { FaStream } from "react-icons/fa";
 import { BsXLg } from "react-icons/bs";
 
 import "./Header.css";
+import { useAuth } from "../../context/AuthContext";
+import UserProfile from "../userProfile/UserProfile";
 
 const Header = () => {
     const [close, setClose] = useState(false);
 
+    const { user } = useAuth();
     const MobileVeiw = () => {
         setClose(!close);
     };
+
     return (
         <header className="header">
             <div className="logo">
@@ -37,14 +41,18 @@ const Header = () => {
                         <Link to="/reviews">
                             <li>Reviews</li>
                         </Link>
-                        <div className="nav-button">
-                            <Link to="/login">
-                                <button className="login">Login</button>
-                            </Link>
-                            <Link to="/signup">
-                                <button className="signup">Sign Up</button>
-                            </Link>
-                        </div>
+                        {user ? (
+                            <UserProfile />
+                        ) : (
+                            <div className="nav-button">
+                                <Link to="/login">
+                                    <button className="login">Login</button>
+                                </Link>
+                                <Link to="/signup">
+                                    <button className="signup">Sign Up</button>
+                                </Link>
+                            </div>
+                        )}
                     </ul>{" "}
                 </div>
             </div>

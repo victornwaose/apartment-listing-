@@ -26,6 +26,7 @@ const AuthProvider = ({ children }) => {
             else setUser(null);
         });
     }, []);
+    console.log(user, "is avaliable");
     const values = {
         user,
         loading,
@@ -36,7 +37,7 @@ const AuthProvider = ({ children }) => {
         setPassword,
         setUser,
         setAlert,
-        setLoading
+        setLoading,
     };
 
     return <Auth.Provider value={values}>{children}</Auth.Provider>;
