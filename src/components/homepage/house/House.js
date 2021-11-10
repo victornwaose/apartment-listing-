@@ -61,7 +61,7 @@ const Story = () => {
                     <div className="compare-text-text">
                         <div className="compare-text-text_icon">
                             <svg
-                                width="66"
+                                width="50"
                                 height="49"
                                 viewBox="0 0 66 53"
                                 fill="none"

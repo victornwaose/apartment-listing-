@@ -229,6 +229,9 @@ button {
     text-align: center;
     border-radius: 10px;
 }
+.compare-text-text_icon {
+    margin-right: 402px;
+}
 }
 
 
@@ -311,7 +314,7 @@ button {
     flex-direction: column;
 }
 .compare-container-img {
-    width: 400px;
+    width: 500px;
     height: 70%;
 }
 .compare-text-text {
@@ -323,5 +326,18 @@ button {
     padding: 0px;
     text-align: center;
     border-radius: 10px;
+}
+.compare-text-text_icon svg{
+    width: 20px;
+    height: 20px;
+   
+}
+.compare-text-text_icon {
+     margin-right: 191px;
+}
+
+.compare-text-text p {
+    margin-top: -15px;
+    margin-bottom: 8px;
 }
 }
