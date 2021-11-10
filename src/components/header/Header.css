@@ -104,7 +104,7 @@ a {
 
  @media screen and (max-width: 790px) {
     .header {
-        width: 100% !important;
+        width: 80% !important;
         height: 57px;
     }
     a {
@@ -155,7 +155,7 @@ a {
 }
 @media screen and (max-width: 490px) { 
     .header {
-        width: 100% !important;
+        width: 80% !important;
         height: 57px;
       
 
