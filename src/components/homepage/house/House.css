@@ -235,7 +235,7 @@ button {
 @media screen and (max-width: 790px) {
 
     .house {
-        width: 100%;     
+        width: 80%;     
     }
     .house-container{
         display: flex;
