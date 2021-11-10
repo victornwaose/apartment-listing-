@@ -16,7 +16,7 @@ const About = () => {
                     src={carousel.image}
                     alt="name"
                     style={{
-                        width: "240px",
+                        width: "100%",
                         height: "140px",
                         cursor: "pointer",
                         textTransform: "uppercase",

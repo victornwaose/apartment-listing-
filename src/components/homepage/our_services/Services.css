@@ -38,10 +38,10 @@ color: rgb(1, 100, 80);
 }
 .item__icon {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    height: 30%;
+    height: 50%;
     border-radius: 50%;    
     width: 40%;
-    padding-top: 18px;
+    padding: 18px;
     align-items: center;
     color:  rgb(255,101,1);
 }

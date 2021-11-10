@@ -29,7 +29,7 @@
 
 .hero_text h4{
     font-size: 1.3rem;
-    color: gray;  
+    color: gb(10,10,10);  
 }
 
 .Search{

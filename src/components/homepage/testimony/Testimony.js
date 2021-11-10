@@ -17,7 +17,7 @@ const Testimony = () => {
                         alt="name"
                         style={{
                             width: "45px",
-                            height: "45spx",
+                            height: "45px",
                             borderRadius: "50%",
                             cursor: "pointer",
                             textTransform: "uppercase",

@@ -122,7 +122,7 @@ button {
     border-radius: 10px;
 }
 .compare-text-text_icon{
-    margin-right: 210px;
+    margin-right: 278px;
 }
 .compare-text-text p {
     width: 80%;
@@ -338,6 +338,7 @@ button {
 
 .compare-text-text p {
     margin-top: -15px;
-    margin-bottom: 8px;
+    margin-bottom: 2px;
+    padding: 8px;
 }
 }
