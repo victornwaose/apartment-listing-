@@ -157,6 +157,7 @@ a {
     .header {
         width: 80% !important;
         height: 57px;
+        margin-left: auto;
       
 
     }
