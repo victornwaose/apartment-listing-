@@ -107,7 +107,7 @@ button {
 }
 .compare-text-text {
     position: absolute;
-    width: 40%;
+    width: 65%;
     height: 190px;
     bottom: 30px;
     right: -210px;
@@ -157,6 +157,7 @@ button {
     text-align: center; 
     margin: 0;
 }
+
 
 .house-container-text h1 {
    text-align: center;
