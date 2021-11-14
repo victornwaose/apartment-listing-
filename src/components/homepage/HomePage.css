@@ -38,6 +38,7 @@
     left: 0;
     right: 0;
     width: 50%;
+    padding-bottom: 20px;
     border: 1px solid rgb(223, 221, 221);
     height: 120px;
     background-color: rgb(223, 221, 221);
@@ -53,16 +54,24 @@
     margin-bottom: 10px;
 }
 .Search_Items {
- position: relative;
+    position: relative;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .Search_input{
+    position: relative;
     padding: 15px;
-    width: 350px;
+    width: 90%;
     height: 10px;
-    margin-left: 15%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 .searchBtn{ 
     position: absolute;
+    width: 10%;
     bottom: 0;
     background-color: rgb(1, 100, 80);
     color: #fff;
@@ -120,6 +129,7 @@ img{
 }
 .Search{
     width: 90%;
+    height: 136px;
     bottom: -48px;
     left: 0;
     right: 0;
@@ -129,8 +139,8 @@ img{
 }
 .Search_input{
     padding: 15px;
-    width: 250px;
-    margin-left: px;
+    width: 100%;
+  
 }
 .partner{
     width: 100%;

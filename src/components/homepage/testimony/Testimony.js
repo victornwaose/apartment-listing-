@@ -40,7 +40,7 @@ const Testimony = () => {
             items: 2,
         },
         790: {
-            items: 4,
+            items: 3,
         },
     };
 

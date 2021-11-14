@@ -20,12 +20,12 @@
 }
 .house-container-text {
     width: 28%; 
-    margin-top: 50px;
     margin-left: 30px; 
 }
 .house-container-text h5{
     color:rgb(1, 100, 80);
     font-weight: 400;
+    margin-top: 50px;
 }
 .house-container-text h1 {
     font-weight: 700;
@@ -33,8 +33,8 @@
 }
 .house-container-text p {
     font-weight: 400;
-    margin-top: 20px;
-    margin-bottom: 69px;
+    margin-top: 15x;
+    margin-bottom: 23px;
     color: gray;
 }
 button {
@@ -55,12 +55,13 @@ button {
 }
 .house-container-text2 {
     width: 40%; 
-    margin-top: 50px;
+   
     margin-left: 30px; 
 }
 .house-container-text2 h5{
     color:rgb(1, 100, 80);
     font-weight: 400;
+    margin-top: 25px;
 }
 .house-container-text2 h1 {
     font-weight: 700;
@@ -69,13 +70,23 @@ button {
 .house-container-text2 p {
     font-weight: 400;
     margin-top: 20px;
-    margin-bottom: 69px;
+    margin-bottom: 25px;
     color: gray;
 }
+.house-container-text2 button {
+    background-color: rgb(1, 100, 80);
+    width: 140px;
+    height: 35px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    border: transparent !important;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
 .house-container-image2 {
     width: 40%;
-    
-    
 }
 .house_pic2 {
     width: 99%;
@@ -149,6 +160,7 @@ button {
         flex-direction: column;
     }
     .house-container-image {
+        
         width: 100%;
         margin-right: 0;   
     }
@@ -172,9 +184,9 @@ button {
 }
 .house-container2{
     flex-direction: column;
-    flex-wrap: wrap;
 }
 .house-container-text2 {
+    order: 2;
     width: 100%;
     margin-left: 0px; 
     text-align: center;
@@ -191,6 +203,7 @@ button {
     margin-top: 25px;
 }
 .house-container-image2 {
+    order: 1;
     width: 100%;
     margin: 0  
 }

@@ -46,7 +46,7 @@ const Homepage = () => {
                         />
                         <SearchIcon
                             className="searchBtn"
-                            style={{ width: "8%", height: "34px" }}
+                            style={{ width: "10%", height: "34px" }}
                         />
                     </div>
                 </div>
