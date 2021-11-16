@@ -16,7 +16,7 @@ color: rgb(1, 100, 80);
 .grid__item {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
-    margin-top: 10px;
+    margin-top: 30px;
 
 }
 .icon__container{
@@ -28,6 +28,7 @@ color: rgb(1, 100, 80);
     justify-content: center;
     border-radius: 10px;
     margin-left: 20px;
+    margin-top: 20px;
 }
 .icon__container p{
     padding-top: 28px;
@@ -35,6 +36,7 @@ color: rgb(1, 100, 80);
 .icon__container:hover{
     border-bottom: 10px solid rgb(1, 100, 80);
     color:rgb(1, 100, 80);
+    margin-bottom: -10px;
 }
 .item__icon {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -44,6 +46,7 @@ color: rgb(1, 100, 80);
     padding: 18px;
     align-items: center;
     color:  rgb(255,101,1);
+    margin-top: 20px;
 }
 .item__icon:active {
     color: rgb(1, 100, 80);
@@ -64,7 +67,10 @@ color: rgb(1, 100, 80);
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
+    
+}
+.item__icon {
+    width: 30%;
 }
 
 }  
@@ -87,6 +93,8 @@ color: rgb(1, 100, 80);
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
+}
+.item__icon {
+    width: 20%;
 }
 }

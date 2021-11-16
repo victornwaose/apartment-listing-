@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import SearchIcon from "@mui/icons-material/Search";
 
 import "./HomePage.css";
+import Video from "./ved/Video";
 import House from "./house/House";
 import Services from "./our_services/Services";
 import Listed from "./listed/Listed";
@@ -61,6 +62,7 @@ const Homepage = () => {
             <About />
             <Services />
             <House />
+            <Video embedId={"7x3Dz7idqCo"} />
             <Testimony />
             <Listed />
         </div>

@@ -1,0 +1,29 @@
+.video__container{
+    width : 80%;
+    margin: 10px auto;
+    height: 500px;
+}
+.video__header{
+    text-align: center;
+    color: rgb(1, 100, 80);
+}
+.video__content {
+    width: 100%;
+    height: 80%;
+    margin: 10px auto;
+  }
+
+
+
+  @media screen and (max-width: 490px) { 
+    .video__container{
+        width: 80%;
+        height: 500px;
+        margin: 20px auto;
+    }
+    .video__content {
+        width: 100%;
+        height: 80%;
+        margin: 10px auto;
+      }
+  }
