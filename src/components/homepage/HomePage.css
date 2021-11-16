@@ -4,22 +4,28 @@
     position: relative;
 }
 .hero{
-    background-image:url("../../assets/hero-image-1.png");
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    padding-bottom: 150px;
-   
-
+    width: 100%;
+    background: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
 }
 
 .hero_text{
-    width: 40%;
+    width: 93%;
     padding-left: 50px;
-    padding-top: 100px ;
+    padding-top: 50px ;
     font-weight: 700;
    
+}
+.hero-image  {
+    height: 70%;
+    width: 100%;
+}
+.hero-image img{
+    width: 100%;
+    height: 431px;
 }
 .hero_text h1{
     font-size: 3rem;
@@ -99,10 +105,20 @@ img{
     .homepage {
         width: 100%;
     }
-       .hero_text{
+
+.hero_text{
+    width: 51%;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+.hero-image  {
+    height: 40%;
+    width: 40%;
+}
+.hero-image img{
     width: 100%;
-    text-align: center;
-    }
+    height: 431px;
+}
     .hero_text h1{
         font-size: 2.7rem;
         padding-top: 13px;
@@ -117,8 +133,17 @@ img{
         width: 100%;
     }
     .hero_text{
-    width: 100%;
-    text-align: center;
+        width: 51%;
+        padding-left: 20px;
+        padding-top: 30px;
+    }
+    .hero-image  {
+        height: 40%;
+        width: 40%;
+    }
+    .hero-image img{
+        width: 100%;
+        height: 431px;
     }
     .hero_text h1{
         font-size: 2rem;

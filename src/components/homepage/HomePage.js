@@ -6,6 +6,7 @@ import Video from "./ved/Video";
 import House from "./house/House";
 import Services from "./our_services/Services";
 import Listed from "./listed/Listed";
+import Hero from "../../assets/hero.png";
 import Testimony from "./testimony/Testimony";
 import master from "../../assets/materCard.jpg";
 import airbnb from "../../assets/Airbnb-Logo.jpg";
@@ -32,6 +33,9 @@ const Homepage = () => {
                             search confidently with your trusted source of home
                             for sale or rent
                         </h4>
+                    </div>
+                    <div className="hero-image">
+                        <img src={Hero} alt="hero" />
                     </div>
                 </div>
                 <div className="Search">

@@ -35,6 +35,7 @@ a{
 .nav-options {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .nav-options ul {
     display: flex;
@@ -58,11 +59,15 @@ a {
     color: black;
 }
 
+.nav-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .login {
     width: 140px;
     height: 35px;
     padding: 5px;
-    margin-top: 15px;
     margin-left: 10px;
     background-color: white;
     color: rgb(1, 100, 80);
@@ -102,7 +107,7 @@ a {
     border-bottom: none;
 }
 
- @media screen and (max-width: 790px) {
+ @media screen and (max-width: 960px) {
     .header {
         width: 80% !important;
         height: 57px;
