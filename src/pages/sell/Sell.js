@@ -1,34 +1,17 @@
 import React from "react";
 
+import "./Sell.css";
+import Form from "./form/Form.js";
+import Upload from "./uploads/Uploads.js";
+
 const Sell = () => {
     return (
-        <div>
-            {" "}
-            <form className="product__container">
-                <h2 className="heading">Upload a product for review</h2>
-
-                <div className="input__container">
-                    <label>Product Name</label>
-                    <input type="text" required />
-                </div>
-
-                <div className="input__container">
-                    <label>Product Description</label>
-                    <textarea cols="10" rows="10" required />
-                </div>
-
-                <div className="input__container">
-                    <label>Product Image</label>
-                    <input type="file" />
-                </div>
-
-                <div className="input__container">
-                    <label>Product Review</label>
-                    <input type="text" required />
-                </div>
-
-                <button className="btn"></button>
-            </form>
+        <div className="sell">
+            <h2 className="heading">Upload a product for review</h2>
+            <div className="sell-section">
+                <Upload />
+                <Form />
+            </div>
         </div>
     );
 };

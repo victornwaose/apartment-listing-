@@ -26,30 +26,30 @@ const Header = () => {
             <div className={close ? "nav" : "nav close"}>
                 <div className="nav-options">
                     <ul>
-                        <Link to="/">
-                            <li>Home</li>
+                        <Link to="/" >
+                            <li onClick={close}>Home</li>
                         </Link>
                         <Link to="/buy">
-                            <li>Buy</li>
+                            <li onClick={close}>Buy</li>
                         </Link>
-                        <Link to="/sell">
-                            <li>Sell</li>
+                        <Link to="/sell" >
+                            <li onClick={close}>Sell</li>
                         </Link>
-                        <Link to="/lend">
-                            <li>Listed</li>
+                        <Link to="/lend" >
+                            <li onClick={close}>Listed</li>
                         </Link>
-                        <Link to="/reviews">
-                            <li>Reviews</li>
+                        <Link to="/reviews" >
+                            <li onClick={close}>Reviews</li>
                         </Link>
                         {user ? (
                             <UserProfile />
                         ) : (
                             <div className="nav-button">
-                                <Link to="/login">
-                                    <button className="login">Login</button>
+                                <Link to="/login" >
+                                    <button className="login" onClick={close}>Login</button>
                                 </Link>
-                                <Link to="/signup">
-                                    <button className="signup">Sign Up</button>
+                                <Link to="/signup" >
+                                    <button className="signup" onClick={close}>Sign Up</button>
                                 </Link>
                             </div>
                         )}
