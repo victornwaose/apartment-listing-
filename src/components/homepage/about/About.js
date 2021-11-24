@@ -7,8 +7,6 @@ import { data } from "../../../data/data";
 const About = () => {
     const [carousels, setCarousel] = React.useState(data);
 
-    console.log(carousels);
-
     const items = carousels?.map((carousel) => {
         return (
             <div className="carouselItem">

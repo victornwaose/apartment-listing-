@@ -5,6 +5,8 @@ import { auth } from "../firebase";
 
 const Auth = createContext();
 
+//https://apartment-backend-api.herokuapp.com/api/v1/apartment
+
 export const useAuth = () => {
     return useContext(Auth);
 };
@@ -27,6 +29,8 @@ const AuthProvider = ({ children }) => {
         });
     }, []);
     console.log(user, "is avaliable");
+    console.log(user?.accessToken);
+
     const values = {
         user,
         loading,

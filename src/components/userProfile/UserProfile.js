@@ -33,9 +33,10 @@ const UserProfile = () => {
                         borderRadius: "50%",
                     }}
                 />
-                <RiArrowDropDownLine style={{ width: "30px", height: "30px" }}>
-                    <button onClick={signOutUser()}>LogOut</button>
-                </RiArrowDropDownLine>
+                <button onClick={signOutUser}>LogOut</button>
+                <RiArrowDropDownLine
+                    style={{ width: "30px", height: "30px" }}
+                ></RiArrowDropDownLine>
             </div>
         </div>
     );
