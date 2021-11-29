@@ -28,7 +28,6 @@ const AuthProvider = ({ children }) => {
             else setUser(null);
         });
     }, []);
-    console.log(user, "is avaliable");
     console.log(user?.accessToken);
 
     const values = {

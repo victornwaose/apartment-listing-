@@ -4,13 +4,9 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import "./House.css";
 import Pic1 from "../../../assets/pexels-max-vakhtbovych-6284232.jpg";
 import tall3 from "../../../assets/tall3.jpg";
-import { useApartmentContext } from "../../../context/ApartmentContext";
+import { useApartment } from "../../../context/ApartmentContext";
 
 const Story = () => {
-    const { data } = useApartmentContext();
-
-    console.log(data);
-
     return (
         <div className="house">
             <div className="house-container">

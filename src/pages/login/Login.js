@@ -16,7 +16,6 @@ import "./Login.css";
 const Login = () => {
     const { email, setEmail, password, setPassword, setAlert, setLoading } =
         useAuth();
-    console.log(email);
     const history = useHistory();
 
     const handleLogin = async () => {

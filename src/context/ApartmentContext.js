@@ -1,70 +1,81 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
-const ApartmentContext = createContext();
+const Apartment = createContext();
 
-export const useApartmentContext = () => useContext(ApartmentContext);
+//https://apartment-backend-api.herokuapp.com/api/v1/apartment
+
+export const useApart = () => {
+    return useContext(Apartment);
+};
 
 const ApartmentProvider = ({ children }) => {
-    const [data, setData] = useState([]);
+    const [apartments, setApartments] = useState([]);
+    const [type, setType] = useState("");
+    const [price, setPrice] = useState(0);
+    const [location, setLocation] = useState("");
     const [loading, setLoading] = useState(false);
-    const [type, setType] = useState("flat");
-    const [price, setPrice] = useState(400);
-    const [location, setLocation] = useState("Asaba");
-    const [keyword, setKeyword] = useState(" ");
+    const [alert, setAlert] = useState({
+        open: false,
+        message: "",
+        type: "success",
+    });
 
-    const Url = "https://apartment-backend-api.herokuapp.com/api/v1/apartment";
+    const Url = "http://localhost:5000/api/v1/apartment";
 
-    useEffect(() => {
-        const fetchData = () => {
-            setLoading(true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const fetchData = async () => {
+        setLoading(true);
+        if (!apartments.length) {
             if (price === 0 || location === " " || type === " ") {
                 try {
-                    fetch(Url)
-                        .then((res) => res.json())
-                        .then((data) => {
-                            console.log(data);
-                        });
-                    setLoading(false);
+                    const response = await fetch(Url);
+                    if (response.ok) {
+                        const getData = await response.json();
+                        setApartments(getData);
+                        setLoading(false);
+                    }
                 } catch (error) {
                     console.log(error);
                     setLoading(false);
                 }
             } else {
                 try {
-                    fetch(
+                    const res = await fetch(
                         `${Url}?price=${price}&location=${location}&type=${type}`
-                    )
-                        .then((response) => response.json())
-                        .then((data) => {
-                            console.log(data);
-                        });
-                    setLoading(false);
+                    );
+                    if (res.ok) {
+                        const newData = await res.json();
+                        setApartments(newData);
+                        setLoading(false);
+                    }
                 } catch (error) {
                     console.log(error);
                     setLoading(false);
                 }
             }
-        };
-        fetchData();
-    }, [data, location, price, type]);
-
-    const values = {
-        data,
-        type,
-        loading,
-        price,
-        location,
-        setType,
-        setPrice,
-        setLocation,
-        setKeyword,
+        }
     };
 
-    return (
-        <ApartmentContext.Provider value={values}>
-            {children}
-        </ApartmentContext.Provider>
-    );
+    useEffect(() => {
+        fetchData();
+    }, [apartments, fetchData, location, price, type]);
+    console.log(apartments);
+
+    const values = {
+        type,
+        location,
+        price,
+        apartments,
+        loading,
+        alert,
+        setAlert,
+        setLoading,
+        setLocation,
+        setPrice,
+        setType,
+    };
+
+    return <Apartment.Provider value={values}>{children}</Apartment.Provider>;
 };
 
 export default ApartmentProvider;

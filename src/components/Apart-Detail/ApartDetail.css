@@ -1,0 +1,58 @@
+.apartDetail{
+    width: 100%;
+}
+.apartDetail-Container{
+    display: flex;
+    flex-direction: row;
+}
+.apartDetail-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff; 
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000;
+    width: 90%;
+    padding: 10px;
+    margin-left: 10px;
+}
+.apartDetail-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.apartDetail-Text {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.apartDetail-location {
+    display: flex;
+    color: #828282;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.apartDetail-Address{
+    display: flex;
+    color: #828282;
+    margin-bottom: 5px;
+}
+.apartDetail-price {
+    display: flex;
+    color: #828282;
+    margin-bottom: 5px;
+}
+.apartDetail-type{
+    display: flex;
+    color: #828282;
+    margin-bottom: 5px;
+}
+.apartDetail-button {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 5px;
+}
+@media screen and (max-width: 790px) {
+    .apartDetail-card {
+        margin-bottom: 10px;
+    }
+}
