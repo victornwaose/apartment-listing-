@@ -20,17 +20,83 @@
 }
 .DetailPage-Container-text{
     width: 60%;
-    margin: 5px auto;
-    
+    margin: 5px auto;  
 }
 .DetailPage-Container-text h2 {
-    font-size: 14px;
+    font-size: 18px;
+    color: #828282;
+    margin-left: 6px
+}
+.icons {
+    display: flex;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    color: rgb(1, 100, 80);
 }
 .DetailPage-Container-text-name {
     text-align: center;
 }
-.DetailPage-Container-text-card {
+.DetailPage-Container-text-cards {
+    width: 100%;
+}
+.card {
     display: flex;
     justify-content: space-between;
-    align-items: center
+    flex-direction: row;
+}
+.type {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: flex;
+    color: #828282;
+}
+.price {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: flex;
+    color: #828282;
+}
+.location {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: flex;
+    color: #828282;
+}
+.address {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: flex;
+    color: #828282;
+}
+.bedrooms {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: flex;
+    color: #828282;
+}
+.bathrooms {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: flex;
+    color: #828282;
+}
+.garage {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: flex;
+    color: #828282;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
 }

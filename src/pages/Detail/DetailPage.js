@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { BiCurrentLocation, BiLocationPlus } from "react-icons/bi";
-import { GiFamilyHouse } from "react-icons/gi";
-import { FaDollarSign } from "react-icons/fa";
+import { GiFamilyHouse, GiMechanicGarage } from "react-icons/gi";
+import { FaDollarSign, FaBed, FaBath } from "react-icons/fa";
 
 import "./DetailPage.css";
 
@@ -30,30 +30,44 @@ const DetailPage = () => {
                     <h2 className="DetailPage-Container-text-name">
                         {detailData?.apartment?.name}
                     </h2>
-                    <div className="DetailPage-Container-text-card">
-                        <div>
-                            <h2>{detailData?.apartment?.type}</h2>
+                    <div className="DetailPage-Container-text-cards">
+                        <div className="card">
+                            <div className="type">
+                                <GiFamilyHouse className="icons" />
+                                <h2>{detailData?.apartment?.type}</h2>
+                            </div>
+                            <div className="price">
+                                <FaDollarSign className="icons" />
+                                <h2>{detailData?.apartment?.price}</h2>
+                            </div>
                         </div>
-                        <div>
-                            <h2>{detailData?.apartment?.price}</h2>
+                        <div className="card">
+                            <div className="location">
+                                <BiCurrentLocation className="icons" />
+                                <h2>{detailData?.apartment?.location}</h2>
+                            </div>
+                            <div className="address">
+                                <BiLocationPlus className="icons" />
+                                <h2>{detailData?.apartment?.address}</h2>
+                            </div>
                         </div>
-                        <div>
-                            <h2>{detailData?.apartment?.location}</h2>
+                        <div className="card">
+                            <div className="bedrooms">
+                                <FaBed className="icons" />
+                                <h2>{detailData?.apartment?.bedrooms}</h2>
+                            </div>
+                            <div className="bathrooms">
+                                <FaBath className="icons" />
+                                <h2>{detailData?.apartment?.bathrooms}</h2>
+                            </div>
                         </div>
-                        <div>
-                            <h2>{detailData?.apartment?.address}</h2>
-                        </div>
-                        <div>
-                            <h2>{detailData?.apartment?.bedrooms}</h2>
-                        </div>
-                        <div>
-                            <h2>{detailData?.apartment?.bathrooms}</h2>
-                        </div>
-                        <div>
+                        <div className="garage">
+                            <GiMechanicGarage className="icons" />
                             <h2>{detailData?.apartment?.garage}</h2>
                         </div>
                     </div>
                 </div>
+                <button>Make Enquiry </button>
             </div>
         </div>
     );
