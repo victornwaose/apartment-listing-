@@ -2,6 +2,7 @@ import React from "react";
 import { BiCurrentLocation, BiLocationPlus } from "react-icons/bi";
 import { GiFamilyHouse } from "react-icons/gi";
 import { FaDollarSign } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 import "./ApartDetail.css";
 
@@ -21,7 +22,8 @@ const ApartDetail = ({ apartment }) => {
                             <h4>{apartment.address}</h4>
                         </div>
                         <div className="apartDetail-price">
-                            <FaDollarSign style={{ color: "#016450" }} /><h4>{apartment.price}</h4>
+                            <FaDollarSign style={{ color: "#016450" }} />
+                            <h4>{apartment.price}</h4>
                         </div>
                         <div className="apartDetail-type">
                             <GiFamilyHouse style={{ color: "#016450" }} />
@@ -29,7 +31,9 @@ const ApartDetail = ({ apartment }) => {
                         </div>
                     </div>
                     <div className="apartDetail-button">
-                        <button> veiw more</button>
+                        <Link to={`/DetailPage/${apartment._id}`}>
+                            <button> view more</button>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,19 @@
+.DetailPage {
+    width: 80%;
+    margin: 10px auto;
+}
+.DetailPage-Container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000;
+    width: 90%;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+.DetailPage-Container  img {
+    width: 80%;
+    height: 340px;
+}
