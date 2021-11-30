@@ -36,34 +36,32 @@ const DetailPage = () => {
                                 <GiFamilyHouse className="icons" />
                                 <h2>{detailData?.apartment?.type}</h2>
                             </div>
-                            <div className="price">
-                                <FaDollarSign className="icons" />
-                                <h2>{detailData?.apartment?.price}</h2>
-                            </div>
-                        </div>
-                        <div className="card">
                             <div className="location">
                                 <BiCurrentLocation className="icons" />
                                 <h2>{detailData?.apartment?.location}</h2>
+                            </div>
+                            <div className="bedrooms">
+                                <FaBed className="icons" />
+                                <h2>{detailData?.apartment?.bedrooms}</h2>
+                            </div>
+                            <div className="garage">
+                                <GiMechanicGarage className="icons" />
+                                <h2>{detailData?.apartment?.garage}</h2>
+                            </div>
+                        </div>
+                        <div className="card">
+                            <div className="price">
+                                <FaDollarSign className="icons" />
+                                <h2>{detailData?.apartment?.price}</h2>
                             </div>
                             <div className="address">
                                 <BiLocationPlus className="icons" />
                                 <h2>{detailData?.apartment?.address}</h2>
                             </div>
-                        </div>
-                        <div className="card">
-                            <div className="bedrooms">
-                                <FaBed className="icons" />
-                                <h2>{detailData?.apartment?.bedrooms}</h2>
-                            </div>
                             <div className="bathrooms">
                                 <FaBath className="icons" />
                                 <h2>{detailData?.apartment?.bathrooms}</h2>
                             </div>
-                        </div>
-                        <div className="garage">
-                            <GiMechanicGarage className="icons" />
-                            <h2>{detailData?.apartment?.garage}</h2>
                         </div>
                     </div>
                 </div>
