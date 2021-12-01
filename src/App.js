@@ -12,6 +12,7 @@ import Lend from "./pages/lend/Lend";
 import Review from "./pages/review/Review";
 import Sell from "./pages/sell/Sell";
 import DetailPage from "./pages/Detail/DetailPage";
+import Modal from "./components/modal/Modal";
 
 function App() {
     return (
@@ -27,6 +28,7 @@ function App() {
                     <Route path="/login" component={Login} />
                     <Route path="/signup" component={SignUp} />
                     <Route path="/DetailPage/:id" component={DetailPage} />
+                    <Route path="/modal" component={Modal} />
                 </Switch>
                 <Footer />
             </Router>
